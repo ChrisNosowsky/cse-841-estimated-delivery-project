@@ -33,4 +33,4 @@ further research and development. At minimum, this presents a great opportunity 
 research in the field to help better predict estimated delivery time. 
 
 ## Project Setup:
-TBD
+Email me for the dataset nosowsky@msu.edu or go here: https://www.kaggle.com/datasets/armanaanand/ebay-delivery-date-prediction
