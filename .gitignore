@@ -1,0 +1,5 @@
+*.zip
+venv/
+*.csv
+.csv
+logs/
