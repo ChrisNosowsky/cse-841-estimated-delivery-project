@@ -9,7 +9,7 @@ runs their systems to ensure packages arrive at hubs and stations on time. Addit
 fed through queues and feeds and sent to different systems to ensure route manifests are printed the
 day of shipment arrival, scanned in at the station, and put onto courier vans. A lot of these legacy
 systems are dependent upon rule-based conditional logic that are implemented into the system
-codebase to give an “estimated arrival delivery date”, or EADD. These rules need to be manually
+codebase to give an “estimated arrival delivery date”. These rules need to be manually
 updated and communicated across all down-stream systems when business processes change, making it
 costly and human-dependent. In addition, a lot of variability is in place that the rules cannot possibly
 account for, such as weather implications, packages that get lost/not transported out of the facilities or
@@ -34,3 +34,9 @@ research in the field to help better predict estimated delivery time.
 
 ## Project Setup:
 Email me for the dataset nosowsky@msu.edu or go here: https://www.kaggle.com/datasets/armanaanand/ebay-delivery-date-prediction
+
+Project is run by running the following in the root project directory:
+
+```python
+python main.py
+```
