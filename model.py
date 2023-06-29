@@ -217,8 +217,16 @@ class NeuralNet:
         """
         model = tf.keras.Sequential()
         model.add(tf.keras.layers.Dense(12, activation=tf.nn.relu, input_shape=(12,)))
+        model.add(tf.keras.layers.Dense(512, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(256, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(64, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(32, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(16, activation=tf.nn.relu))
+        model.add(tf.keras.layers.Dense(8, activation=tf.nn.relu))
         model.add(tf.keras.layers.Dense(1, activation=tf.nn.relu))
-        model.compile(loss='mean_squared_error', optimizer='adam')
+        opt = keras.optimizers.Adam(learning_rate=0.001)
+        model.compile(loss='mean_squared_error', optimizer=opt)
         self.history = model.fit(self.preprocess_data.x_train, self.preprocess_data.y_train,
                                  validation_split=0.2, epochs=50, batch_size=64)
         model.summary()
